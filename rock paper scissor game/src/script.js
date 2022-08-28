@@ -13,7 +13,11 @@
 // ** getComputerChoice randomly selects between `rock` `paper` `scissors` and returns that string **
 // getComputerChoice() 👉 'Rock'
 // getComputerChoice() 👉 'Scissors'
-function getComputerChoice() {}
+function getComputerChoice() {
+  const rpsChoice = ["Rock", "Paper", "Scissors"];
+  const randomChoice = Math.floor(Math.random() * 3);
+  return rpsChoice[randomNumber];
+}
 
 // ** getResult compares playerChoice & computerChoice and returns the score accordingly **
 // human wins - getResult('Rock', 'Scissors') 👉 1
