@@ -70,9 +70,8 @@ function playGame() {
   // 3. Call the onClickRPS function every time someone clicks
   // 4. Make sure to pass the currently selected rps button as an argument
   rpsButtons.forEach((rpsButton) => {
-    rpsButton.onClick = () => onClickRPS(rpsButton.value);
+    rpsButton.onclick = () => onClickRPS(rpsButton.value);
   });
-  // Add a click listener to the end game button that runs the endGame() function on click
 }
 
 // ** endGame function clears all the text on the DOM **
